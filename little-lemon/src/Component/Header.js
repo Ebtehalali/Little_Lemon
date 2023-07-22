@@ -5,15 +5,17 @@ function Header() {
         <>
             <header className="header">
                 <div className="container">
-                    <img src={Logo} alt="Logo" className="logo" />
+                    <div className="logo">
+                        <img src={Logo} alt="Logo" />
+                    </div>
                     <nav className="nav">
                         <ul>
-                            <li><a href="home">Home</a></li>
-                            <li><a href="about">About</a></li>
-                            <li><a href="menu">Menu</a></li>
-                            <li><a href="reservations">Reservations</a></li>
-                            <li><a href=" online-order">Online order</a></li>
-                            <li><a href="login">Login</a></li>
+                            <li><a href="home.js">Home</a></li>
+                            <li><a href="about.js">About</a></li>
+                            <li><a href="menu.js">Menu</a></li>
+                            <li><a href="reserve.js">Reservations</a></li>
+                            <li><a href=" online.js">Online order</a></li>
+                            <li><a href="login.js">Login</a></li>
                         </ul>
                     </nav>
                 </div>
