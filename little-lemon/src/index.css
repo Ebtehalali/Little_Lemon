@@ -9,7 +9,6 @@
 }
 
 .header{
-    /*background-color: blue;*/
     align-items: center;
 }
 
@@ -19,7 +18,8 @@
     margin: auto;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-areas: 'logo logo logo log nav nav nav nav nav nav';
+    grid-template-areas: 'logo logo logo log nav nav nav nav nav nav'
+                          'left-side left-side left-side left-side . right-side right-side right-side right-side right-side';
 }
 
 .logo{
@@ -48,4 +48,49 @@
     color: #000;
     font-weight: 500;
     text-decoration: none;
+}
+
+.main{
+    background-color: #495E57;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.left-side{
+    grid-area: left-side;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.left-side > h1{
+    color: #F4CE14;
+    font-size: 35px;
+    margin-top: 20px;
+    line-height: 1;
+}
+
+.left-side > p{
+    margin-top: 20px;
+    line-height: 1.4;
+}
+
+.left-side > button{
+    background-color: #F4CE14;
+    padding: 5px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.right-side{
+    grid-area: right-side;
+}
+
+.right-side > img{
+    height: 300px;
+    margin-top: 30px;
+    width: 300px;
+    float: right;
+    border-radius: 20px;
 }
