@@ -13,13 +13,14 @@
 }
 
 .container{
-    /*background-color: antiquewhite;*/
     width: 80%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-areas: 'logo logo logo log nav nav nav nav nav nav'
-                          'left-side left-side left-side left-side . right-side right-side right-side right-side right-side';
+                          'left-side left-side left-side left-side . right-side right-side right-side right-side right-side'
+                          'section-heading section-heading section-heading section-heading section-heading orders orders orders orders orders'
+                          'GreekSalad GreekSalad GreekSalad bruchetta bruchetta bruchetta . LemonDessert LemonDessert LemonDessert';
 }
 
 .logo{
@@ -92,5 +93,82 @@
     margin-top: 30px;
     width: 300px;
     float: right;
-    border-radius: 20px;
+    border-radius: 20px
+}
+
+.section-heading{
+    grid-area: section-heading;
+    align-items: center;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.orders{
+    grid-area: orders;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.orders > button{
+    background-color: #F4CE14;
+    padding: 10px 30px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.box{
+    background-color: #EDEFEE;
+    border-radius: 10px 10px 0 0;
+    width: 350px;
+    padding-bottom: 20px;
+}
+
+.box > img{
+    border-radius: 10px 10px 0 0;
+    height: 250px;
+    width: 350px;
+}
+
+.box > h3{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.box > p{
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.box > strong{
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.price{
+    color: #EE9972;
+    float: right;
+    margin-right: 10px;
+}
+
+.GreekSalad{
+    grid-area: GreekSalad;
+}
+
+.bruchetta{
+    grid-area: bruchetta;
+    margin-left: 15px;
+}
+
+.bruchetta > strong{
+    display: inline-block;
+    margin-top: 45px;
+}
+
+.LemonDessert{
+    grid-area: LemonDessert;
 }
